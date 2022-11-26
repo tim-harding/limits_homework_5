@@ -24,9 +24,36 @@
 
 \setlength{\parindent}{0in}
 
-\title{My Title}
+\title{Homework 5}
 \author{Tim Harding}
 
 \begin{document}
 \maketitle
+
+\section*{4.3.13}
+
+\subsection*{1}
+
+\subsubsection*{Problem}
+\begin{align*}
+    \sum_{n=2}^\infty \frac{1}{n \ln(n)}
+\end{align*}
+
+\subsubsection*{Solution}
+\begin{align*}
+    \int_{2}^\infty \frac{dx}{x \ln(x)} \\
+\end{align*}
+\begin{align*}
+    u &= \ln(x) \\
+    du &= \frac{dx}{x} \\
+    dx &= x\ du
+\end{align*}
+\begin{align*}
+     & \int_{\ln(2)}^\infty \frac{du}{u} \\
+    =& \hard{\ln(u)}_{\ln(2)}^\infty \\
+    =& \ln(\infty) - \ln(\ln(2)) \\
+    =& \infty
+\end{align*}
+The series diverges.
+
 \end{document}
