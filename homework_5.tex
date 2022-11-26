@@ -33,25 +33,46 @@
 
 \subsection*{2}
 Testing the convergence of $\sum_{n=2}^\infty \frac{1}{n (\ln(n))^2}$
-
 \begin{align*}
     u &= \ln(x) \\
     du &= \frac{dx}{x} \\
     dx &= x\ du
 \end{align*}
 \begin{align*}
-     & \sum_{\ln(2)}^\infty u^{-2}\ du \\
+     & \int_{\ln(2)}^\infty u^{-2}\ du \\
     =& \hard{-\frac{1}{u}}_{\ln(2)}^\infty \\
     =& -\frac{1}{\infty} - \round{-\frac{1}{\ln(2)}} \\
     =& \frac{1}{\ln(2)}
 \end{align*}
-
 The series converges.
 
 
 
 \subsection*{3}
 Testing the convergence of $\sum_{n=1}^\infty \frac{1}{n^2 + 1}$.
+\begin{align*}
+    x &= \tan(u) \\
+    dx &= \sec^2(u)\ du \\
+\end{align*}
+\begin{align*}
+    1 &= \tan(x) \\
+    x &= \arctan(1) \\
+    x &= \frac{\pi}{4}
+\end{align*}
+\begin{align*}
+    \infty &= \tan(x) \\
+    x &= \arctan(\infty) \\
+    x &= \frac{\pi}{2}
+\end{align*}
+\begin{align*}
+     & \int_\frac{\pi}{4}^\frac{\pi}{2} \frac{\sec^2(u)}{1 + \tan^2(u)} du \\
+    =& \int_\frac{\pi}{4}^\frac{\pi}{2} du \\
+    =& \hard{u}_{\frac{\pi}{4}}^\frac{\pi}{2} \\
+    =& \frac{\pi}{2} - \frac{\pi}{4} \\
+    =& \frac{\pi}{2}
+\end{align*}
+The series converges.
+
 
 \subsection*{4}
 Testing the convergence of $\sum_{n=1}^\infty \frac{3n^2 + 17n - 5}{n^5 + 48n^4 + 2007}$.
