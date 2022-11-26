@@ -34,6 +34,22 @@
 \subsection*{2}
 Testing the convergence of $\sum_{n=2}^\infty \frac{1}{n (\ln(n))^2}$
 
+\begin{align*}
+    u &= \ln(x) \\
+    du &= \frac{dx}{x} \\
+    dx &= x\ du
+\end{align*}
+\begin{align*}
+     & \sum_{\ln(2)}^\infty u^{-2}\ du \\
+    =& \hard{-\frac{1}{u}}_{\ln(2)}^\infty \\
+    =& -\frac{1}{\infty} - \round{-\frac{1}{\ln(2)}} \\
+    =& \frac{1}{\ln(2)}
+\end{align*}
+
+The series converges.
+
+
+
 \subsection*{3}
 Testing the convergence of $\sum_{n=1}^\infty \frac{1}{n^2 + 1}$.
 
