@@ -10,7 +10,6 @@
 \usepackage{graphicx}
 
 \graphicspath{ {./images/} }
-% \includegraphics{name}
 
 \newcommand{\curly}[1]{\left\{      #1 \right\}     }
 \newcommand{\round}[1]{\left(       #1 \right)      }
@@ -32,28 +31,22 @@
 
 \section*{4.3.13}
 
-\subsection*{1}
+\subsection*{2}
+Testing the convergence of $\sum_{n=2}^\infty \frac{1}{n (\ln(n))^2}$
 
-\subsubsection*{Problem}
-\begin{align*}
-    \sum_{n=2}^\infty \frac{1}{n \ln(n)}
-\end{align*}
+\subsection*{3}
+Testing the convergence of $\sum_{n=1}^\infty \frac{1}{n^2 + 1}$.
 
-\subsubsection*{Solution}
-\begin{align*}
-    \int_{2}^\infty \frac{dx}{x \ln(x)} \\
-\end{align*}
-\begin{align*}
-    u &= \ln(x) \\
-    du &= \frac{dx}{x} \\
-    dx &= x\ du
-\end{align*}
-\begin{align*}
-     & \int_{\ln(2)}^\infty \frac{du}{u} \\
-    =& \hard{\ln(u)}_{\ln(2)}^\infty \\
-    =& \ln(\infty) - \ln(\ln(2)) \\
-    =& \infty
-\end{align*}
-The series diverges.
+\subsection*{4}
+Testing the convergence of $\sum_{n=1}^\infty \frac{3n^2 + 17n - 5}{n^5 + 48n^4 + 2007}$.
+
+\subsection*{5}
+Testing the convergence of $\sum_{n=2}^\infty \frac{2^n}{3^n + 4}$.
+
+\subsection*{8}
+Testing the convergence of $\sum_{n=2}^\infty \frac{2 + \cos(n)}{n}$.
+
+\subsection*{10}
+Testing the convergence of $\sum_{n=2}^\infty \frac{1}{\sqrt{n(n+1)(n+2)}}$.
 
 \end{document}
