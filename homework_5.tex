@@ -126,4 +126,17 @@ We know that $\forall n \geq 1$, $\frac{a_n}{n} \leq a_n$, so the series converg
 \subsection*{4}
 We know that $\sin(x) \leq x$ for all positive inputs, so the series converges.
 
+
+
+\section*{3.3.A}
+Determine the convergence or divergence of $\sum_{n=2}^\infty \frac{1}{n(\ln(n))^{k}}$ for $k>1$.
+\begin{align*}
+     & \int_{2}^\infty \frac{dx}{x (\ln(x))^k} \\
+    =& \int_{\ln(2)}^\infty u^{-k}\ du \\
+    =& \hard{\frac{1}{-k+1} u^{-k+1}}_{\ln(2)}^\infty \\
+    =& \frac{1}{1-k} \round{\underbrace{\infty^{1-k}}_{1-k<0 \implies \infty^{1-k} \to 0} - (\ln(2))^{1-k}} \\
+    =& -\frac{(\ln(2))^{1-k}}{1-k} < \infty
+\end{align*}
+The series converges.
+
 \end{document}
