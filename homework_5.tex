@@ -69,7 +69,7 @@ Testing the convergence of $\sum_{n=1}^\infty \frac{1}{n^2 + 1}$.
     =& \int_\frac{\pi}{4}^\frac{\pi}{2} du \\
     =& \hard{u}_{\frac{\pi}{4}}^\frac{\pi}{2} \\
     =& \frac{\pi}{2} - \frac{\pi}{4} \\
-    =& \frac{\pi}{2}
+    =& \frac{\pi}{4}
 \end{align*}
 The series converges.
 
@@ -86,11 +86,27 @@ Since $\frac{1}{n^3}$ converges and $0<L<\infty$ we see that the series converge
 
 \subsection*{5}
 Testing the convergence of $\sum_{n=2}^\infty \frac{2^n}{3^n + 4}$.
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\frac{2^n}{3^n+4}}{\round{\frac{2}{3}}^n} \\
+    =& \lim_{n\to\infty} \frac{2^n 3^n}{(3^n + 4)2^n} \\
+    =& \lim_{n\to\infty} \frac{3^n}{3^n + 4} \\
+    =& 1
+\end{align*}
+Since $\round{\frac{2}{3}}^n$ is convergent, our series is convergent.
 
 \subsection*{8}
 Testing the convergence of $\sum_{n=2}^\infty \frac{2 + \cos(n)}{n}$.
 
+Since $\frac{2+\cos(n)}{n} \geq \frac{1}{n}$, we know that the series diverges.
+
 \subsection*{10}
 Testing the convergence of $\sum_{n=2}^\infty \frac{1}{\sqrt{n(n+1)(n+2)}}$.
+
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\frac{1}{\sqrt{n(n+1)(n+2)}}}{\frac{1}{\sqrt{n^3}}} \\
+    =& \sqrt{\lim_{n\to\infty} \frac{n^3}{n(n+1)(n+2)}} \\
+    =& 1
+\end{align*}
+Since $\frac{1}{\sqrt{n^3}}$ converges, so too does the series.
 
 \end{document}
