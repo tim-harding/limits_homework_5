@@ -152,6 +152,14 @@ Write down detailed proof for Theorem 4.3.9(a2).
 
 \subsection*{2}
 Testing convergence of $\sum_{n=1}^\infty \frac{n^n}{n!}$.
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\frac{(n+1)^{n+1}}{(n+1)!}}{\frac{n^n}{n!}} \\
+    =& \lim_{n\to\infty} \frac{(n+1)^{n+1}}{n^n (n+1)} \\
+    =& \lim_{n\to\infty} \frac{(n+1)^n}{n^n} \\
+    =& \lim_{n\to\infty} \round{\frac{n+1}{n}}^n \\
+    =& e > 1
+\end{align*}
+The series diverges.
 
 \subsection*{3}
 Testing convergence of $\sum_{n=1}^\infty \frac{(n!)^2}{(2n)!}$.
