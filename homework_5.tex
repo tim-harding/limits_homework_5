@@ -241,11 +241,26 @@ For $n \geq 3$, $\frac{5n+1}{4n+3} > 1$. Therefore, each term is increasing over
 
 
 \section*{4.4.15}
+TODO
+
+Prove theorem 4.4.5
 
 
 
 \section*{4.4.16}
+We need a good test for $\frac{\sqrt[n]{e}}{n^2}$. The root test is not a good fit here. The terms don't lend themselves well to $u$ substitution or integration by parts either, so the integral test doesn't work well either. Limit comparison is difficult as well, since dividing by the convergent $\frac{1}{n^2}$ yields a divergent seqence and dividing by the divergent $\sqrt[n]{e}$ yields a convergent sequence, so the tests are inconclusive. The radical on $e$ makes the ratio test tricky as well, and it doesn't quite work out:
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\frac{e^\frac{1}{n+1}}{(n+1)^2}} {\frac{e^\frac{1}{n}}{n^2}} \\
+    =& \lim_{n\to\infty} \frac{e^\frac{1}{n+1}}{e^\frac{1}{n}} \frac{n^2}{(n+1)^2} \\
+    =& \lim_{n\to\infty} e^{\frac{1}{n+1} - \frac{1}{n}} \frac{n^2}{(n+1)^2} \\
+    =& \lim_{n\to\infty} e^{\frac{n-(n+1)}{n(n+1)}} \frac{n^2}{(n+1)^2} \\
+    =& \lim_{n\to\infty} e^{\frac{1}{n(n+1)}} \frac{n^2}{(n+1)^2} \\
+    =& \lim_{n\to\infty} e^{\frac{1}{n(n+1)}} \round{ \lim_{n\to\infty} \frac{n}{n+1}}^2 \\
+    =& 1 \times 1^2 = 1
+\end{align*}
+This is inconclusive.
 
+TODO
 
 
 \end{document}
