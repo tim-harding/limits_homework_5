@@ -203,4 +203,40 @@ Testing convergence of $\frac{2\sqrt{2}}{9801} \sum_{n=1}^\infty \frac{(4n)!\ (1
 \end{align*}
 The series converges.
 
+
+
+\section*{4.4.12}
+Given
+\begin{align*}
+    a_n = \begin{cases}
+        \frac{n^2}{e^n} & \exists k \in \Z : n = 2k+1 \\
+        \frac{2007}{e^n} & \exists k \in \Z : n = 2k
+    \end{cases}
+\end{align*}
+show that $\sum_{i=1}^\infty a_n$ is convergent.
+
+\begin{align*}
+     & \sum_{i=1}^\infty \round{\frac{(2i-1)^2}{e^{2i-1}} + \frac{2007}{e^{2i}}} \\
+    =& e \sum_{i=1}^\infty \frac{(2i-1)^2}{e^{2i}} + 2007 \sum_{i=1}^\infty e^{-2i} \\
+    =& e \sum_{i=1}^\infty \frac{4i^2 - 4i + 1}{e^{2i}} + 2007 \sum_{i=1}^\infty e^{-2i} \\
+    =& 4e \sum_{i=1}^\infty i^2 e^{-2i} - 4e \sum_{i=1}^\infty ie^{-2i} + e \sum_{i=1}^\infty e^{-2i} + 2007 \sum_{i=1}^\infty e^{-2i} \\
+\end{align*}
+
+\begin{align*}
+     & \lim_{i\to\infty} \frac{\frac{(i+1)^2}{e^{2(i+1)}}} {\frac{i^2}{e^{2i}}} \\
+    =& \lim_{i\to\infty} \frac{(i+1)^2}{i^2} \frac{e^{2i}}{e^{2(i+1)}} \\
+    =& \lim_{i\to\infty} \round{\frac{i+1}{i} \frac{e^{i}}{e^{i+1}}}^2 \\
+    =& \lim_{i\to\infty} \round{\round{1+\frac{1}{i}} \frac{1}{e}}^2 \\
+    =& \round{ \frac{1}{e} \round{1 + \lim_{i\to\infty} \frac{1}{i}} }^2 \\
+    =& \frac{1}{e^2} < 1
+\end{align*}
+
+$\sum_{i=1}^\infty i^2 e^{-2i}$ is convergent. Since $i e^{-2i} < i^2 e^{-2i}$ and $e^{-2i} < i^2 e^{-2i}$, these series converge as well. Therefore, the entire series converges.
+
+\section*{4.4.13}
+
+\section*{4.4.15}
+
+\section*{4.4.16}
+
 \end{document}
