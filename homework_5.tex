@@ -345,6 +345,23 @@ TODO: Find sum
 The derivative of this power series is just itself, which makes sense because this is the power series for $e^x$.
 
 \section*{5.1.16}
+The function in 5.1.14 is $f(x) = e^x$. First we figure out the series
+\begin{align*}
+     & \frac{x^0}{0!} - \frac{x^1}{1!} + \frac{x^2}{2!} - \frac{x^3}{3!} + \cdots \\
+    =& \frac{x^0}{0!} + \frac{x^1}{1!} - 2\frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} - 2\frac{x^3}{3!} + \cdots \\
+    =& \round{\frac{x^0}{0!} + \frac{x^1}{1!}  + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots} - 2 \round{\frac{x^1}{1!} + \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots} \\
+    =& \sum_{n=0}^\infty \frac{x^n}{n!} - 2\sum_{n=0}^\infty \frac{x^{2n+1}}{(2n+1)!} \\
+    =& e^x - 2\sinh(x)
+\end{align*}
+
+Next we figure out the series
+\begin{align*}
+     & \frac{x^0}{0!} + \frac{x^2}{1!} + \frac{x^4}{2!} + \frac{x^6}{3!} + \cdots \\
+    =& \frac{x^0}{0!} + \frac{x^1}{1!} - \frac{x^1}{1!} + \frac{x^2}{1!} + \frac{x^3}{3!} - \frac{x^3}{3!} + \frac{x^4}{2!} + \frac{x^5}{5!} - \frac{x^5}{5!} + \frac{x^6}{3!} + \cdots \\
+    =& \round{\frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{1!} + \frac{x^3}{3!} + \frac{x^4}{2!} + \cdots} - \round{\frac{x^1}{1!} + \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots} \\
+    =& \sum_{n=0}^\infty \frac{x^n}{n!} - \sum_{n=0}^\infty \frac{x^{2n+1}}{(2n+1)!} \\
+    =& e^x - \sinh(x)
+\end{align*}
 
 
 \end{document}
