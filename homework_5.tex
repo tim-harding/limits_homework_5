@@ -415,8 +415,18 @@ We combine this with the taylor series for $e^x$ at $c=1$ from the previous prob
 \subsection*{6}
 Find the taylor series $g(x)$ of $f(x) = \cos(2x)$ at $c=0$.
 
+We notice that this is the same as the taylor series of $\cos(x)$ except that each derivative carries an extra multiple of 2. Therefore, we have
+\begin{align*}
+    g(x) = \sum_{n=0}^\infty \frac{(-1)^n (2x)^{2n}}{(2n)!}
+\end{align*}
+
 \subsection*{9}
 Find the taylor series $g(x)$ of $f(x) = \ln(1+x)$ at $c=0$.
+
+This is the same as the expansion of $\ln(x)$ at $c=1$ but with $x$ shifted.
+\begin{align*}
+    g(x) &= \sum_{n=0}^\infty \frac{(-1)^n x^{n+1}}{n+1}
+\end{align*}
 
 
 
