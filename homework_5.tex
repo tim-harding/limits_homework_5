@@ -333,6 +333,16 @@ TODO: Find sum
 
 
 \section*{5.1.15}
+\begin{align*}
+    f(x) &= \sum_{n=0}^\infty \frac{x^n}{n!} \\
+    &= \frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots
+\end{align*}
+\begin{align*}
+    f'(x) &= 1\frac{x^0}{1!} + 2\frac{x^1}{2!} + 3\frac{x^2}{3!} + 4\frac{x^3}{4!} + \cdots \\
+    &= \sum_{n=0}^\infty \frac{(n+1)x^n}{(n+1)!} \\
+    &= \sum_{n=0}^\infty \frac{x^n}{n!}
+\end{align*}
+The derivative of this power series is just itself, which makes sense because this is the power series for $e^x$.
 
 \section*{5.1.16}
 
