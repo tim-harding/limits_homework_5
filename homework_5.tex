@@ -20,6 +20,7 @@
 \newcommand{\R}    [0]{\mathbb{R}                   }
 \newcommand{\Z}    [0]{\mathbb{Z}                   }
 \newcommand{\N}    [0]{\mathbb{N}                   }
+\newcommand{\iif}  [0]{\Longleftrightarrow          }
 
 \setlength{\parindent}{0in}
 
@@ -118,7 +119,7 @@ Since $\frac{1}{\sqrt{n^3}}$ converges, so too does the series.
 
 
 
-\section*{3.3.17}
+\section*{4.3.17}
 
 \subsection*{3}
 We know that $\forall n \geq 1$, $\frac{a_n}{n} \leq a_n$, so the series converges.
@@ -128,7 +129,7 @@ We know that $\sin(x) \leq x$ for all positive inputs, so the series converges.
 
 
 
-\section*{3.3.A}
+\section*{4.3.A}
 Determine the convergence or divergence of $\sum_{n=2}^\infty \frac{1}{n(\ln(n))^{k}}$ for $k>1$.
 \begin{align*}
      & \int_{2}^\infty \frac{dx}{x (\ln(x))^k} \\
@@ -141,11 +142,14 @@ The series converges.
 
 
 
-\section*{3.3.B}
-TODO
+\section*{4.3.B}
+Write down detailed proof for Theorem 4.3.9 (a2):
 
-Write down detailed proof for Theorem 4.3.9(a2).
+$\forall n \in \N$, $a_n > 0$, $b_n > 0$, $\lim_{n\to\infty} \frac{a_n}{b_n} = 0$, $\abs{\sum_{n=1}^\infty b_n} < \infty$ $\implies \abs{\sum_{n=1}^\infty a_n} < \infty$
 
+\bigskip\medskip
+
+Let $B = \sum_{n=1}^\infty b_n$. Then $\forall n_0 \in \N$, $\sum_{n=n_0}^\infty b_n \leq B$. Suppose that $\exists N \in \N$, $\forall n \in \N : n > N \implies \abs{\frac{a_n}{b_n} - L} < 1$. This corresponds to the consequence of an $\epsilon - \delta$ proof of $\frac{a_n}{b_n}$ with $\epsilon = 1$. Then $\forall n \in \N : n \geq N+1 \implies a_n < (L+1)b_n$. When we choose $L=0$, we know that $a_n < b_n$. If we choose $n_0 = N+1$ and use the direct comparison result that $0 \leq a_n \leq b_n$, $\forall n \in \N : n > n_0$, $\abs{\sum_{n=n_0}^\infty b_n} < \infty$ $\implies \abs{\sum_{n=n_0}^\infty a_n} < \infty$ to see that $\sum_{n=N+1}^\infty a_n$ converges. We also know that $\sum_{n=1}^\infty a_n < \infty$ is a further consequence by using that fact that $\sum_{n=1}^\infty a_n < \infty \iif \sum_{n=n_0}^\infty a_n < \infty$.
 
 
 \section*{4.4.10}
