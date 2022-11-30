@@ -263,4 +263,78 @@ This is inconclusive.
 TODO
 
 
+
+\section*{5.1.12}
+
+\subsection*{2}
+\subsubsection*{Problem}
+\begin{align*}
+    \sum_{n=1}^\infty \frac{x^n}{n2^n}
+\end{align*}
+
+\subsubsection*{Solution}
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\frac{x^{n+1}}{(n+1)2^{n+1}}}{\frac{x^n}{n2^n}} \\
+    =& \lim_{n\to\infty} \frac{x^{n+1}}{x^n} \frac{n2^n}{(n+1)2^{n+1}} \\
+    =& \frac{x}{2} \lim_{n\to\infty} \frac{n}{n+1} \\
+    =& \frac{x}{2}
+\end{align*}
+\begin{align*}
+    -1 < &\frac{x}{2} < 1 \\
+    -2 < &x < 2 \\
+\end{align*}
+The radius of convergence is $2$ and the interval of convergence is $(-2, 2)$.
+
+TODO: Find sum
+
+
+\subsection*{3}
+\subsubsection*{Problem}
+\begin{align*}
+    \sum_{n=1}^\infty \frac{(x-1)^n}{\ln(n+2)}
+\end{align*}
+
+\subsubsection*{Solution}
+\begin{align*}
+    =& \lim_{n\to\infty} \frac{\frac{(x-1)^{n+1}}{\ln((n+1)+2)}}{\frac{(x-1)^n}{\ln(n+2)}} \\
+    =& \lim_{n\to\infty} \frac{(x-1)^{n+1}}{(x-1)^n} \frac{\ln(n+2)}{\ln(n+3)} \\
+    =& (x-1) \ln\round{\lim_{n\to\infty} \frac{n+2}{n+3}} \\
+    =& (x-1) \ln(0) \\
+    =& x-1
+\end{align*}
+\begin{align*}
+    -1 &< x-1 < 1 \\
+    0 &< x < 2 \\
+\end{align*}
+The radius of convergence is $1$ and the interval of convergence is $(0,2)$.
+
+TODO: Find sum
+
+
+\subsection*{4}
+\subsubsection*{Problem}
+\begin{align*}
+    \sum_{n=1}^\infty \round{1+\frac{1}{n}}^n (x+e)^n
+\end{align*}
+
+\subsubsection*{Solution}
+\begin{align*}
+     & \lim_{n\to\infty} \sqrt[n]{\round{1+\frac{1}{n}}^n (x+e)^n} \\
+    =& (x+e) \lim_{n\to\infty} \round{1+\frac{1}{n}} \\
+    =& x+e
+\end{align*}
+\begin{align*}
+    -1 &< x+e < 1 \\
+    -1-e &< x < 1-e \\
+\end{align*}
+The radius of convergence is $1$ and the interval of convergence is $(-1-e, 1-e)$.
+
+TODO: Find sum
+
+
+\section*{5.1.15}
+
+\section*{5.1.16}
+
+
 \end{document}
