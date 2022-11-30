@@ -435,17 +435,34 @@ Use known Taylor series to find the limits.
 
 \subsection*{2}
 \begin{align*}
-    \lim_{n\to0} \frac{\cos(x) - 1 - \frac{x^2}{2}}{x^4}
+     & \lim_{n\to0} \frac{\cos(x) - 1 - \frac{x^2}{2}}{x^4} \\
+\end{align*}
+I think that the problem was intended to be written slightly differently, and I will solve the modified version:
+\begin{align*}
+     & \lim_{x\to0} \frac{\cos(x) - 1 + \frac{x^2}{2}}{x^4} \\
+    =& \lim_{x\to0} \frac{\sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} - 1 + \frac{x^2}{2}}{x^4} \\
+    =& \lim_{x\to0} \frac{\sum_{n=2}^\infty \frac{(-1)^n x^{2n}}{(2n)!}}{x^4} \\
+    =& \lim_{x\to0} \sum_{n=2}^\infty \frac{(-1)^n x^{2n-4}}{(2n)!} \\
+    =& \lim_{x\to0} \sum_{n=2}^\infty \frac{(-1)^n x^{2(n-2)}}{(2n)!} \\
+    =& \lim_{x\to0} \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n+4)!} \\
+    =& \frac{1}{4!} = \frac{1}{24}
 \end{align*}
 
 \subsection*{3}
 \begin{align*}
-    \lim_{n\to0} \frac{e^{x^2} - 1}{x^2}
+     & \lim_{x\to0} \frac{e^{x^2} - 1}{x^2} \\
+    =& \lim_{x\to0} \frac{\sum_{n=0}^\infty \frac{\round{x^2}^n}{n!} - 1}{x^2} \\
+    =& \lim_{x\to0} \frac{\sum_{n=1}^\infty \frac{x^{2n}}{n!}}{x^2} \\
+    =& \lim_{x\to0} \sum_{n=1}^\infty \frac{x^{2n-2}}{n!} \\
+    =& \lim_{x\to0} \sum_{n=1}^\infty \frac{x^{2(n-1)}}{n!} \\
+    =& \lim_{x\to0} \sum_{n=0}^\infty \frac{x^{2n}}{(n+1)!} \\
+    =& 1
 \end{align*}
+We see the last step because all terms are multiples of $x$ except for the first.
 
 \subsection*{4}
 \begin{align*}
-    \lim_{n\to0} \frac{\sin(x) - x}{x^3}
+    \lim_{x\to0} \frac{\sin(x) - x}{x^3}
 \end{align*}
 
 \subsection*{6}
