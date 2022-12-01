@@ -181,17 +181,25 @@ The series converges.
 
 
 \subsection*{5}
-TODO
-
 Testing convergence of $\sum_{n=1}^\infty \frac{n!}{(n+2)!}$.
+
 \begin{align*}
      & \lim_{n\to\infty} \frac{\frac{(n+1)!}{(n+3)!}}{\frac{n!}{(n+2)!}} \\
-    =& \lim_{n\to\infty} \frac{\frac{1}{(n+2)(n+3)}}{\frac{1}{(n+1)(n+2)}} \\
-    =& \lim_{n\to\infty} \frac{(n+1)(n+2)}{(n+2)(n+3)} \\
+    =& \lim_{n\to\infty} \frac{(n+1)! (n+2)!}{n! (n+3)!} \\
     =& \lim_{n\to\infty} \frac{n+1}{n+3} \\
     =& 1
 \end{align*}
 The ratio test is inconclusive.
+\begin{align*}
+     & \sum_{n=1}^\infty \frac{1}{(n+1)(n+2)} \\
+    =& \sum_{n=1}^\infty \frac{1}{n^2 + 3n + 2}
+\end{align*}
+\begin{align*}
+     & \lim_{n\to\infty} \frac{\frac{1}{n^2 + 3n + 2}}{\frac{1}{n^2}} \\
+    =& \lim_{n\to\infty} \frac{n^2}{n^2 + 3n + 2} \\
+    =& 1
+\end{align*}
+By the limit comparison test, the sum is convergent.
 
 
 
