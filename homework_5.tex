@@ -253,9 +253,25 @@ For $n \geq 3$, $\frac{5n+1}{4n+3} > 1$. Therefore, each term is increasing over
 
 
 \section*{4.4.15}
-TODO
-
-Prove theorem 4.4.5
+To begin, we let $L = \lim_{n\to\infty} \abs{a_n}^\frac{1}{n}$. We have two cases:
+\begin{enumerate}
+    \item When $L<1$, we need to show that the series is absolutely convergent and hence convergent. There exists $r \in (L, 1)$ and $N \in \N$ such that $\forall n \geq N$ we have
+    \begin{align*}
+        \abs{a_n}^\frac{1}{n} &< r \\
+        \abs{a_n} &< r^n
+    \end{align*}
+    Because $\sum_{n=N}^\infty \abs{a_n}$ is less than a geometric series we know that it converges. Next, we write the full series
+    \begin{align*}
+        \sum_{n=1}^\infty \abs{a_n} = \sum_{n=1}^{N-1} \abs{a_n} + \sum_{n=N}^\infty \abs{a_n}
+    \end{align*}
+    We have written the series as the sum of a finite sum of finite terms and a convergent infinite series. Therefore, the series converges.
+    \item When $L>1$, we know that $\exists N \in \N$ such that $\forall n \geq N$ we have
+    \begin{align*}
+        \abs{a_n}^\frac{1}{n} &> 1 \\
+        \abs{a_n} &> 1
+    \end{align*}
+    We know that if the terms of a series do not approach zero in the limit the series diverges. Therefore, we know that $\sum_{n=1}^\infty a_n$ diverges.
+\end{enumerate}
 
 
 
